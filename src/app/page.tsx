@@ -1,11 +1,13 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function Page() {
   return (
-    <div>
-      <h1 className="text-blue-500">I'm blue!</h1>
-      <div className="relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black"/>
-      asdf7
+    <div className="flex flex-col justify-evenly content-center h-screen">
+      <div className="m-auto mt-10 w-max">
+        <h1 className="text-xl m-10">Recipe Adviser</h1>
+        <Link href="/recipe/1" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Give me a random recipe</Link>      
+      </div>
     </div>
   );
 }
